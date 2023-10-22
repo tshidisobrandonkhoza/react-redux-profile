@@ -24,6 +24,7 @@ export const UserForm = () => {
 
     return (
         <div>
+            <h1>Update Profile</h1>
             <form action="">
                 <div>
                     <label htmlFor="username">Username</label>
