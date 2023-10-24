@@ -1,4 +1,8 @@
 import axios from 'axios';
 
-export const getPosts = () =>
-axios.get('https://my-json-server.typicode.com/typicode/demo/posts');
+// npx json-server -p 4000  -w  ./src/data/db.json
+
+export const getData = (code) =>
+    axios.get(`http://localhost:1000/${code}`);
+
+

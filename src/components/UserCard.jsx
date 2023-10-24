@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { UserForm } from './UserForm';
 
 import { UserProfile } from './UserProfile';
+import { Post } from './Post';
 const UserCard = () => {
     const userSlice = useSelector((state) => state.user);
 
@@ -10,6 +11,7 @@ const UserCard = () => {
         <div>
             <UserProfile />
             <UserForm />
+            <Post />
         </div>
     )
 }

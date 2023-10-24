@@ -1,9 +1,13 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { getPosts } from "../utils/api";
+import { getData } from "../utils/api";
 
 export const fetchPostsThunk = createAsyncThunk('posts/fetch', () => {
     console.log('Inside fetch Thunk');
-
-    return getPosts();
+    return getData('posts');
 });
- 
+
+
+// export const fetchPostsThunk = createAsyncThunk('post/getPost', async ({ id }) => {
+//     return (`https://my-json-server.typicode.com/typicode/demo/posts`)
+//         .then((res) => { res.json() });
+// });
