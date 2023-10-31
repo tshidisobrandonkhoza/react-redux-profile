@@ -34,7 +34,7 @@ export const UserForm = () => {
                     <label htmlFor="email" >email</label>
                     <input type="email" id="email" name="email" onChange={e => inputChanges(e)} />
                 </div>
-                <button>Save</button>
+                {/* <button>Save</button> */}
             </form>
         </div>
     )
